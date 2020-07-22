@@ -202,27 +202,25 @@ p {
 /* Section Reservation */
 
 .section-outside {
-  display: flex;
+ 
   margin-bottom: 70px;
-  /* justify-content: space-between; */
+
 }
-.section-outside section:first-child {
-  margin-right: auto;
-}
+
 
 .form__reservation {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-
-  max-width: 518px;
+  flex-flow: column nowrap;
+    align-items: center;
+  
 }
 
 .form-reservation__input {
   display: block;
   padding-left: 20px;
 
-  width: 518px;
+  max-width: 518px;
+  width: 100%;
   height: 70px;
   margin-bottom: 25px;
 

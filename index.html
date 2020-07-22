@@ -44,48 +44,52 @@
   <main>
 
     <div class="section-outside container">
-      <section class="section-outside__reservation">
-        <h2>Быстрая бронь</h2>
-        <form class="form-reservation" action="https://jsonplaceholder.typicode.com/posts" method="post">
+      
+      <div class="row">
+        <section class="col-lg-6 section-outside__reservation">
+          <h2>Быстрая бронь</h2>
+          <form class="form-reservation" action="https://jsonplaceholder.typicode.com/posts" method="post">
 
-          <input class="form-reservation__input" autocomplete="on" type="text" name="city" placeholder="Город"
-            pattern="[A-Za-zА-Яа-яЁё]	{,100}" required>
+            <input class="form-reservation__input" autocomplete="on" type="text" name="city" placeholder="Город"
+              pattern="[A-Za-zА-Яа-яЁё]	{,100}" required>
 
-          <input class="form-reservation__input" type="text" name="category-room" placeholder="Категория номера"
-            list="category-room" pattern="[1-5]">
-          <datalist id="category-room">
-            <option value="1"></option>
-            <option value="2"></option>
-            <option value="3"></option>
-            <option value="4"></option>
-            <option value="5"></option>
-          </datalist>
-          <input placeholder="Дата заселения" class="form-reservation__input" type="text" onfocus="(this.type='date')"
-            name="date" required>
-          <!-- <input class="input__form" type="date" name="date" required> -->
+            <input class="form-reservation__input" type="text" name="category-room" placeholder="Категория номера"
+              list="category-room" pattern="[1-5]">
+            <datalist id="category-room">
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+            </datalist>
+            <input placeholder="Дата заселения" class="form-reservation__input" type="text" onfocus="(this.type='date')"
+              name="date" required>
+            <!-- <input class="input__form" type="date" name="date" required> -->
 
-          <input class="form-reservation__input" type="number" name="night" placeholder="Количество ночей">
+            <input class="form-reservation__input" type="number" name="night" placeholder="Количество ночей">
 
-          <input class="form-reservation__input" type="number" name="guests" placeholder="Количество гостей">
+            <input class="form-reservation__input" type="number" name="guests" placeholder="Количество гостей">
 
-          <button class="form-reservation__btn" type="submit">Найти номер</button>
+            <button class="form-reservation__btn" type="submit">Найти номер</button>
 
-          <p class="form-reservation__explanatory-text"><span class="number__offers">9756</span> предложений поступило
-          </p>
-        </form>
-      </section>
+            <p class="form-reservation__explanatory-text"><span class="number__offers">9756</span> предложений поступило
+            </p>
+          </form>
+        </section>
 
-      <section class="section-outside__special-offer">
-        <h2>Спец предложение</h2>
+        <section class="col-lg-6 section-outside__special-offer">
+          <h2>Спец предложение</h2>
 
-        <figure class="special-offer__img-offer">
-          <img class="img-offer__special" src="img/22.jpg" alt="Пример номера люкс">
-          <figcaption class="img-offer__inner">Номера категории люкс</figcaption>
-        </figure>
+          <figure class="special-offer__img-offer">
+            <img class="img-offer__special" src="img/22.jpg" alt="Пример номера люкс">
+            <figcaption class="img-offer__inner">Номера категории люкс</figcaption>
+          </figure>
 
-        <div class="special-offer__explanatory-text">от 5 000 р<a class="special-offer__more-detailed"
-            href="#">Подробнее</a></div>
-      </section>
+          <div class="special-offer__explanatory-text">от 5 000 р<a class="special-offer__more-detailed"
+              href="#">Подробнее</a></div>
+        </section>
+      </div>
+
 
     </div>
 
