@@ -344,7 +344,7 @@ p {
 .services-card__item {
   margin-bottom: 25px;
   /* min-height: 325px; */
-
+width: 100%;
   background-color: #fff;
   border-radius: 10px;
 }
