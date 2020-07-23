@@ -70,6 +70,7 @@ li {
 /* Container */
 .container {
   max-width: 1200px;
+  min-width: 320px;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -151,7 +152,7 @@ li {
 /* Search */
 .header__search {
   margin-right: 21px;
-  width: 355px;
+  max-width: 355px;
   height: 48px;
 }
 
@@ -202,17 +203,13 @@ p {
 /* Section Reservation */
 
 .section-outside {
- 
   margin-bottom: 70px;
-
 }
-
 
 .form__reservation {
   display: flex;
   flex-flow: column nowrap;
-    align-items: center;
-  
+  align-items: center;
 }
 
 .form-reservation__input {
@@ -316,7 +313,7 @@ p {
 /* section__description_about */
 
 .section__description-about {
- margin-bottom: 70px;
+  margin-bottom: 70px;
 }
 
 .description-about__sub-title {
@@ -328,11 +325,10 @@ p {
 }
 
 /* Section services */
-.section__services{
+.section__services {
   margin-bottom: 70px;
 }
 .servise__card li {
-
   /*  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between; */
@@ -344,7 +340,7 @@ p {
 .services-card__item {
   margin-bottom: 25px;
   /* min-height: 325px; */
-width: 100%;
+  width: 100%;
   background-color: #fff;
   border-radius: 10px;
 }
@@ -352,12 +348,11 @@ width: 100%;
 .figcaption__sub {
   margin-top: 35px;
   margin-left: 45px;
-  
 }
 
 .img__service {
   border-radius: 10px 10px 0 0;
- width: 100%;
+  width: 100%;
 }
 
 .figcaption__link {
@@ -382,15 +377,13 @@ width: 100%;
 }
 
 /* Section advantages */
-.section__advantages{
+.section__advantages {
   margin-bottom: 70px;
 }
 
-.advantages-card div{
-
+.advantages-card div {
 }
 .advantages-card__article {
-  
   margin-bottom: 25px;
   padding-bottom: 10px;
 
@@ -406,21 +399,18 @@ width: 100%;
 }
 
 .advantages__text {
- margin-right: 45px;
+  margin-right: 45px;
   margin-left: 45px;
 
   line-height: 2;
 }
 
 /* Section Accomodation */
-.section__accommodation{
+.section__accommodation {
   margin-bottom: 70px;
 }
 
-
 .accomodation-card {
-  
-  min-height: 440px;
   margin-bottom: 25px;
 
   border-radius: 10px;
@@ -433,18 +423,18 @@ width: 100%;
 }
 
 .accomodation-card__img {
-width: 100%;
+  width: 100%;
   margin-bottom: 37px;
   border-radius: 10px;
 }
 
 .accomodation-card__price {
   display: inline;
-  margin-left: 45px;
+  padding-left: 45px;
 }
 .rating__star {
   display: inline;
-  margin-left: 35px;
+  padding-left: 35px;
 }
 .star {
   background: url(../img/star/star.svg) center no-repeat;
@@ -460,16 +450,18 @@ width: 100%;
   background: url(../img/star/star-empty.svg) center no-repeat;
 }
 .accomodation-card__name-hotel {
-  margin: 20px 0 20px 45px;
+  padding: 20px 0 20px 45px;
 }
 
 .accomodation-card__location {
-  margin: 0 0 35px 45px;
+  padding: 0 0 35px 45px;
 }
 
 .accomodation-card__btn-link {
+  display: inline-block;
+
   padding: 16px 22px;
-  margin: 0 0 0 45px;
+  margin: 0 0 20px 45px;
 
   border: 1px solid var(--color__site);
   border-radius: 10px;
@@ -487,8 +479,9 @@ width: 100%;
 .accomodation-card__last {
   position: relative;
   margin: 0;
-  width: 373px;
-  height: 440px;
+  width: 100%;
+  max-height: 440px;
+  height: auto;
 
   background-image: url("../img/accomodation/9.jpg");
   background-size: cover;
@@ -549,7 +542,8 @@ width: 100%;
   font-weight: 700;
   font-size: 22px;
   color: #666;
-  width: 150px;
+  max-width: 150px;
+  width: 100%;
   margin: 0 0 50px 45px;
 }
 
@@ -557,7 +551,7 @@ width: 100%;
   line-height: 1.4;
   display: inline-block;
   margin: 0 35px 20px 0;
-  width: 230px;
+  max-width: 230px;
 }
 .text__block-color {
   color: #999;
@@ -566,7 +560,8 @@ width: 100%;
 .block::after {
   content: "";
   display: block;
-  width: 385px;
+  max-width: 385px;
+  width: 100%;
   height: 1px;
 
   background-color: #ccc;
@@ -613,7 +608,8 @@ width: 100%;
   display: block;
   padding-left: 20px;
 
-  width: 320px;
+  max-width: 320px;
+  width: 100%;
   height: 68px;
   margin-bottom: 25px;
 
@@ -625,7 +621,8 @@ width: 100%;
   display: block;
   padding: 20px 10px 0 20px;
 
-  width: 320px;
+  max-width: 320px;
+  width: 100%;
   margin-bottom: 25px;
 
   border: none;
@@ -641,9 +638,11 @@ width: 100%;
 }
 
 .writing-form__btn {
-  width: 320px;
+  max-width: 320px;
+  width: 100%;
   height: 70px;
   margin-right: 30px;
+  padding: 0 20px;
 
   border: none;
   border-radius: 10px;
@@ -663,10 +662,12 @@ width: 100%;
 /* Footer */
 
 .footer {
-  min-width: 1180px;
+  max-width: 1180px;
+  min-width: 320px;
+  width: 100%;
 
-margin-top: 22px;
-margin-bottom: 52px;
+  margin-top: 22px;
+  margin-bottom: 52px;
   border-radius: 10px;
   display: flex;
   /* justify-content: space-between; */
@@ -682,7 +683,7 @@ margin-bottom: 52px;
 }
 
 .footer__column-privacy {
-  width: 300px;
+  max-width: 300px;
 }
 
 .footer__column-privacy p {
