@@ -88,10 +88,12 @@ li {
 
 .header-inner__logo {
   border-radius: 10px;
+  
+  margin-right: 30px;
 }
 
 .header-inner__telephone {
-  margin-left: 30px;
+  margin-right: auto;
   font-weight: 700;
   text-decoration: none;
   color: #666;
@@ -106,7 +108,7 @@ li {
 .header-inner__personal-account {
   padding-left: 17px;
 
-  margin-left: auto;
+ 
 
   background-image: url(../img/arrow.svg);
   background-repeat: no-repeat;
@@ -122,9 +124,9 @@ li {
   align-items: baseline;
 
   width: 100%;
-  height: 70px;
+  /* height: 70px; */
   /* height: 100%; */
-  padding: 11px 0px;
+  padding: 11px 10px;
   margin-bottom: 70px;
   border-radius: 15px;
 
@@ -154,7 +156,7 @@ li {
 
 /* Search */
 .header__search {
-  
+  position: relative;
   align-items: baseline;
   margin-right:21px;
   max-width: 355px;
@@ -163,6 +165,7 @@ li {
 }
 
 .input__search {
+
   width: 100%;
   /* height: 48px; */
   padding: 16.5px 0;
@@ -177,9 +180,9 @@ li {
 }
 
 .search-button {
-  position: relative;
-  top: -37px;
-  right: -300px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 
   width: 30px;
   height: 30px;
@@ -336,10 +339,14 @@ p {
 /* Section services */
 .section__services {
   margin-bottom: 70px;
+  
+}
+.service__card{
+ 
 }
 
-
 .services-card__item {
+  
   margin-bottom: 25px;
   /* min-height: 325px; */
   width: 100%;
@@ -410,7 +417,9 @@ p {
 .section__accommodation {
   margin-bottom: 70px;
 }
-
+/* .accomodation{
+  align-items: stretch;
+} */
 .accomodation-card {
   margin-bottom: 25px;
 
@@ -772,3 +781,50 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+
+@media (max-width: 992px) {
+ 
+
+.header-inner__logo {
+  width: 50%;
+  
+}
+
+
+
+}
+@media (max-width: 768px) {
+ 
+  .header-inner {
+        margin: 10px 0;
+  }
+  .header-inner__logo {
+    width: 90%;
+    margin: 10px auto 30px;
+  }
+  .header-inner__personal-account {
+    padding-left: 30px;
+  
+   font-size: 22px;
+  
+    background-image: url(../img/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+  
+  }
+  
+  
+  
+  
+  }
+  @media (max-width: 576px) {
+ 
+
+    .header-inner__logo {
+      width: 100%;
+      margin: 0px auto 10px;
+    }
+    
+    
+    
+    }
