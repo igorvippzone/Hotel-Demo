@@ -328,14 +328,7 @@ p {
 .section__services {
   margin-bottom: 70px;
 }
-.servise__card li {
-  /*  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between; */
-}
-/* .servise__card li:nth-child(odd) {
-  padding-right: 10px;
-} */
+
 
 .services-card__item {
   margin-bottom: 25px;
@@ -381,8 +374,7 @@ p {
   margin-bottom: 70px;
 }
 
-.advantages-card div {
-}
+
 .advantages-card__article {
   margin-bottom: 25px;
   padding-bottom: 10px;
@@ -515,18 +507,13 @@ p {
 
 /* Section bottom */
 .section__outside-bottom {
-  display: flex;
-  margin-bottom: 70px;
-  /* justify-content: space-between; */
-}
+   margin-bottom: 70px;
+ }
 
-.section__outside-bottom section:nth-child(1) {
-  margin-right: auto;
-}
 /* Section contacts */
 
 .contacts__block {
-  width: 472px;
+  max-width: 472px;
   border-radius: 10px;
   background-color: #fff;
   padding-top: 40px;
@@ -601,14 +588,28 @@ p {
 
 /* Section write */
 .section__write {
+  max-width: 345px;
+  width: 100%;
   align-self: center;
+  padding: 0;
+}
+.section__write h2 {
+ 
+  font-size: 40px;
+  font-weight: 400;
+width: 100%;
+padding: 0;
+text-align: center;
+
+padding-bottom: 40px;
+
 }
 
 .writing-form__input {
   display: block;
   padding-left: 20px;
 
-  max-width: 320px;
+ 
   width: 100%;
   height: 68px;
   margin-bottom: 25px;
@@ -621,7 +622,7 @@ p {
   display: block;
   padding: 20px 10px 0 20px;
 
-  max-width: 320px;
+
   width: 100%;
   margin-bottom: 25px;
 
@@ -638,11 +639,12 @@ p {
 }
 
 .writing-form__btn {
-  max-width: 320px;
+ 
   width: 100%;
-  height: 70px;
-  margin-right: 30px;
-  padding: 0 20px;
+  /* height: 70px; */
+ 
+  /* margin-right: 30px; */
+  padding: 30px 20px;
 
   border: none;
   border-radius: 10px;
