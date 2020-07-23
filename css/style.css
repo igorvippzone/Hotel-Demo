@@ -331,9 +331,9 @@ p {
 .section__services{
   margin-bottom: 70px;
 }
-.servise__card {
-  /* display: flex;
-  flex-direction: row;
+.servise__card li {
+
+  /*  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between; */
 }
@@ -357,7 +357,7 @@ p {
 
 .img__service {
   border-radius: 10px 10px 0 0;
-  width: 100%;
+ width: 100%;
 }
 
 .figcaption__link {
@@ -385,18 +385,15 @@ p {
 .section__advantages{
   margin-bottom: 70px;
 }
-.advantages-card {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  /* justify-content: space-between; */
-}
-.advantages-card li:not(:nth-child(4n)) {
-  margin-right: auto;
+
+.advantages-card div{
+
 }
 .advantages-card__article {
+  
   margin-bottom: 25px;
-  width: 23%;
+  padding-bottom: 10px;
+
   min-height: 275px;
 
   border-radius: 10px;
@@ -409,7 +406,7 @@ p {
 }
 
 .advantages__text {
-  width: 190px;
+ margin-right: 45px;
   margin-left: 45px;
 
   line-height: 2;
@@ -420,18 +417,9 @@ p {
   margin-bottom: 70px;
 }
 
-.accomodation{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  /* justify-content: space-between; */
-}
-.accomodation li:not(:nth-child(3n)) {
-  margin-right: auto;
-}
 
 .accomodation-card {
-  width: 373px;
+  
   min-height: 440px;
   margin-bottom: 25px;
 
@@ -445,8 +433,7 @@ p {
 }
 
 .accomodation-card__img {
-  display: block;
-  width: 100%;
+width: 100%;
   margin-bottom: 37px;
   border-radius: 10px;
 }
