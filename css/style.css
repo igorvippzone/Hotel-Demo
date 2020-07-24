@@ -1,6 +1,18 @@
 :root {
   --color__site: #cc9933;
 }
+.red{
+  width: 320px;
+  background-color: red;
+}
+.green{
+  width: 480px;
+  background-color: red;
+}
+.yellow{
+  width: 400px;
+  background-color: green;
+}
 
 @font-face {
   font-family: "Muller";
@@ -223,7 +235,7 @@ p {
   display: block;
   padding-left: 20px;
 
-  max-width: 518px;
+  /* max-width: 518px; */
   width: 100%;
   height: 70px;
   margin-bottom: 25px;
@@ -258,7 +270,7 @@ p {
 }
 
 .form-reservation__explanatory-text {
-  display: inline;
+  display: inline-block;
   color: #999;
 }
 
@@ -386,8 +398,6 @@ p {
 .advantages-card__article {
   margin-bottom: 25px;
   padding-bottom: 10px;
-
-  min-height: 275px;
 
   border-radius: 10px;
   background-color: #fff;
@@ -765,11 +775,28 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 992px) {
+  /* Header */
   .header-inner__logo {
     width: 50%;
   }
+  /* Nav */
+  /* Search */
+  /* Main */
+  /* Section Reservation */
+
+  /* section__special_offer */
+  /* section__description_about */
+  /* Section services */
+  /* Section advantages */
+  /* Section Accomodation */
+  /* Section bottom */
+  /* Section contacts */
+  /* Section write */
+  /* Footer */
 }
+
 @media (max-width: 768px) {
+  /* Header */
   .header-inner {
     margin: 10px 0;
   }
@@ -786,16 +813,60 @@ input::-webkit-inner-spin-button {
     background-repeat: no-repeat;
     background-size: 20px;
   }
+  /* Nav */
+  /* Search */
+  /* Main */
+  /* Section Reservation */
+  /* section__special_offer */
+  /* section__description_about */
+  /* Section services */
+  /* Section advantages */
+  /* Section Accomodation */
+  /* Section bottom */
+  /* Section contacts */
+  /* Section write */
+  /* Footer */
 }
 @media (max-width: 576px) {
+  /* Header */
   .header-inner__logo {
     width: 100%;
     margin: 0px auto 10px;
   }
+  /* Nav */
+  /* Search */
+  /* Main */
+  /* Section Reservation */
+  .form-reservation__btn {
+    width: 95%;
+    margin: 10px auto;
+  }
+  .form-reservation__explanatory-text {
+    padding: 0 auto;
+  }
+  /* section__special_offer */
+  /* section__description_about */
+  /* Section services */
+  /* Section advantages */
+  .advantages__img {
+    width: 70px;
+    margin: 10px 20px 10px 15px;
+    float: left;
+  }
+  .advantages__text {
+    padding: 20px 0 0 0;
+
+    line-height: 1.6;
+  }
+  /* Section Accomodation */
+  /* Section bottom */
+  /* Section contacts */
   .contacts__block {
     width: 100%;
     border-radius: 10px;
     background-color: #fff;
     padding-top: 40px;
   }
+  /* Section write */
+  /* Footer */
 }
