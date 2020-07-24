@@ -858,4 +858,10 @@ input::-webkit-inner-spin-button {
   }
   /* Section write */
   /* Footer */
+  .social{
+    display: flex;
+  }
+  .social__link{
+    margin-left: 10px;
+  }
 }
