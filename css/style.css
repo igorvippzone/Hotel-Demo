@@ -121,7 +121,7 @@ li {
 /* Nav */
 .header__nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: baseline;
 
   width: 100%;
@@ -133,26 +133,39 @@ li {
 
   background-color: #fff;
 }
+.nav__inner{
+flex-shrink: 0;
+ 
+}
 .nav__inner:nth-child(1n) {
   margin-right: auto;
+ 
 }
 
 .nav__list {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  
 }
+
 
 .nav__link {
   list-style-type: none;
-  margin: 0 25px;
+  
+  border-radius: 20px;
 }
+
 
 .nav__link a {
   transition: color 1000ms ease-out 0s;
+  display: block;
+  padding: 10px 25px;
+  border-radius: 20px;
 }
 .nav__list a:hover {
   color: var(--color__site);
+  background-color:rgba(1, 1, 1, 0.096);
 }
 
 /* Search */
@@ -272,11 +285,11 @@ p {
 /* section__special_offer */
 
 .section-outside__special-offer {
-  position: relative;
+ 
 }
 
 .special-offer__img-offer {
-  position: relative;
+  
   padding: 0;
   margin: 0;
 }
@@ -377,6 +390,7 @@ p {
 .services-card__description {
   margin-top: 20px;
   margin-left: 45px;
+  margin-bottom: 20px;
 
   line-height: 2;
 }
@@ -701,16 +715,21 @@ p {
   margin-bottom: 50px;
 }
 .footer__column-social {
+  margin-right: 0px;
+}
+.social{
+  float: right;
   margin-right: 50px;
 }
-
 .social li {
   margin-bottom: 20px;
+  width: 25px;
 }
 .social__link {
   display: block;
-  min-width: 25px;
-  min-height: 25px;
+  width: 25px;
+  height: 25px;
+  
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -776,6 +795,7 @@ input::-webkit-inner-spin-button {
   /* Section Reservation */
 
   /* section__special_offer */
+  
   /* section__description_about */
   /* Section services */
   /* Section advantages */
@@ -787,6 +807,11 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 768px) {
+  /* Container */
+.container {
+  padding: 0 30px;
+}
+
   /* Header */
   .header-inner {
     margin: 10px 0;
