@@ -1,7 +1,9 @@
 :root {
   --color__site: #cc9933;
 }
-
+a:hover{
+  color: var(--color__site);
+}
 
 @font-face {
   font-family: "Muller";
