@@ -1,7 +1,7 @@
 :root {
   --color__site: #cc9933;
 }
-a:hover{
+a:hover {
   color: var(--color__site);
 }
 
@@ -133,29 +133,24 @@ li {
 
   background-color: #fff;
 }
-.nav__inner{
-flex-shrink: 0;
- 
+.nav__inner {
+  flex-shrink: 0;
 }
 .nav__inner:nth-child(1n) {
   margin-right: auto;
- 
 }
 
 .nav__list {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  
 }
-
 
 .nav__link {
   list-style-type: none;
-  
+
   border-radius: 20px;
 }
-
 
 .nav__link a {
   transition: color 1000ms ease-out 0s;
@@ -165,7 +160,7 @@ flex-shrink: 0;
 }
 .nav__list a:hover {
   color: var(--color__site);
-  background-color:rgba(1, 1, 1, 0.096);
+  background-color: rgba(1, 1, 1, 0.096);
 }
 
 /* Search */
@@ -284,12 +279,7 @@ p {
 
 /* section__special_offer */
 
-.section-outside__special-offer {
- 
-}
-
 .special-offer__img-offer {
-  
   padding: 0;
   margin: 0;
 }
@@ -717,7 +707,7 @@ p {
 .footer__column-social {
   margin-right: 0px;
 }
-.social{
+.social {
   float: right;
   margin-right: 50px;
 }
@@ -729,7 +719,7 @@ p {
   display: block;
   width: 25px;
   height: 25px;
-  
+
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -784,18 +774,24 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   /* Header */
   .header-inner__logo {
     width: 50%;
   }
   /* Nav */
+  .header__nav {
+    flex-wrap: nowrap;
+  }
+  .nav__inner {
+    flex-shrink: 1;
+  }
   /* Search */
   /* Main */
   /* Section Reservation */
 
   /* section__special_offer */
-  
+
   /* section__description_about */
   /* Section services */
   /* Section advantages */
@@ -804,13 +800,21 @@ input::-webkit-inner-spin-button {
   /* Section contacts */
   /* Section write */
   /* Footer */
+  .footer__column-social {
+  }
+  .social {
+    float: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 @media (max-width: 768px) {
   /* Container */
-.container {
-  padding: 0 30px;
-}
+  .container {
+    padding: 0 30px;
+  }
 
   /* Header */
   .header-inner {
@@ -885,10 +889,10 @@ input::-webkit-inner-spin-button {
   }
   /* Section write */
   /* Footer */
-  .social{
+  .social {
     display: flex;
   }
-  .social__link{
+  .social__link {
     margin-left: 10px;
   }
 }
